@@ -1,10 +1,10 @@
-import Express from "express"; //now able to use ES6 to import Express, instead of using require
+const express = require('express');
+const path = require('path'); //deals with file paths
 
-const app = Express(); //initializing app that contains express function
+const app = express(); //initializing app that contains express function
 
-app.get('/', (req, res) => {
-    res.send( '<h1>Hello World</h1>')
-});
+//set static folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 5000;
 
