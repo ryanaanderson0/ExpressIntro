@@ -2,6 +2,10 @@ import Express from "express"; //now able to use ES6 to import Express, instead 
 
 const app = Express(); //initializing app that contains express function
 
+app.get('/', (req, res) => {
+    res.send( '<h1>Hello World</h1>')
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`)); //runs the web server

@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "homepage": "https://github.com/ryanaanderson0/ExpressIntro#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
