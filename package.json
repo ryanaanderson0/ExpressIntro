@@ -4,7 +4,8 @@
   "description": "Intro to Express.js ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ryanaanderson0/ExpressIntro/issues"
   },
-  "homepage": "https://github.com/ryanaanderson0/ExpressIntro#readme"
+  "homepage": "https://github.com/ryanaanderson0/ExpressIntro#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
